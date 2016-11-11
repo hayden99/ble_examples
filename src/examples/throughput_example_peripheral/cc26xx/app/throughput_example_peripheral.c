@@ -1350,6 +1350,7 @@ static void SimpleBLEPeripheral_blastData()
         // Notification is successfully sent, increment counters
         PIN_setOutputValue(hSbpPins, Board_LED2 , Board_LED_ON);
         msg_counter++;
+        Display_print1(dispHandle, 5, 0, "msg count: %d", msg_counter);
       }
     }
     else
